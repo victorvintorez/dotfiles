@@ -1,0 +1,152 @@
+/**
+ * A floating box version of the paper theme.
+ *
+ * User: Qball (Modified by Victor Vintorez)
+ * Copyright: Dave Davenport
+ */
+* {
+    base: #1e1e2e;
+    mantle: #181825;
+    crust: #11111b;
+
+    text: #cdd6f4;
+    subtext0: #a6adc8;
+    subtext1: #bac2de;
+
+    surface0: #313244;
+    surface1: #45475a;
+    surface2: #585b70;
+
+    overlay0: #6c7086;
+    overlay1: #7f849c;
+    overlay2: #9399b2;
+
+    blue: #89b4fa;
+    lavender: #b4befe;
+    sapphire: #74c7ec;
+    sky: #89dceb;
+    teal: #94e2d5;
+    green: #a6e3a1;
+    yellow: #f9e2af;
+    peach: #fab387;
+    maroon: #eba0ac;
+    red: #f38ba8;
+    mauve: #cba6f7;
+    pink: #f5c2e7;
+    flamingo: #f2cdcd;
+    rosewater: #f5e0dc; 
+
+    spacing: 2;
+    background-color: #00000000;
+    border-color: #444444FF;
+    anchor: north;
+    location: center;
+}
+#window {
+    transparency: "screenshot";
+    background-color: #00000000;
+    border: 0;
+    padding: 0% 0% 1em 0%;
+    x-offset: 0;
+    y-offset: -10%;
+}
+#mainbox {
+    padding: 0px;
+    border: 0;
+    spacing: 1%;
+}
+#message {
+    border: 2px; 
+    padding: 1em; 
+    background-color: @crust; 
+    text-color: @text;
+}
+#textbox normal {
+    text-color: #002B36FF;
+    padding: 0;
+    border: 0;
+}
+#listview {
+    fixed-height: 1;
+    border: 2px;
+    padding: 1em;
+    reverse: false;
+
+    columns: 1;
+    background-color: @crust; 
+}
+#element {
+    border: 0;
+    padding: 2px;
+    highlight: bold ;
+}
+#element normal.normal {
+    text-color: #002B36FF;
+    background-color: #F5F5F500;
+}
+#element normal.urgent {
+    text-color: #D75F00FF;
+    background-color: #F5F5F5FF;
+}
+#element normal.active {
+    text-color: #005F87FF;
+    background-color: #F5F5F5FF;
+}
+#element selected.normal {
+    text-color: #F5F5F5FF;
+    background-color: #4271AEFF;
+}
+#element selected.urgent {
+    text-color: #F5F5F5FF;
+    background-color: #D75F00FF;
+}
+#element selected.active {
+    text-color: #F5F5F5FF;
+    background-color: #005F87FF;
+}
+#element alternate.normal {
+    text-color: #002B36FF;
+    background-color: #D0D0D0FF;
+}
+#element alternate.urgent {
+    text-color: #D75F00FF;
+    background-color: #D0D0D0FF;
+}
+#element alternate.active {
+    text-color: #005F87FF;
+    background-color: #D0D0D0FF;
+}
+#scrollbar {
+    border: 0;
+    padding: 0;
+}
+#inputbar {
+    spacing: 0;
+    border: 2px;
+    padding: 0.5em 1em;
+    background-color: @surface0;
+    index: 0;
+}
+#inputbar normal {
+    foreground-color: #002B36FF;
+    background-color: #F5F5F500;
+}
+
+#mode-switcher {
+    border: 2px;
+    padding: 0.5em 1em;
+    background-color: @surface0;
+    index: 10;
+}
+#button selected {
+    text-color: #4271AEFF;
+}
+#inputbar {
+    children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
+}
+#textbox-prompt-colon {
+    expand:     false;
+    str:        ":";
+    margin:     0px 0.3em 0em 0em ;
+    text-color: @subtext1;
+}

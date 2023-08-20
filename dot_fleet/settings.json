@@ -1,0 +1,7 @@
+{
+    "theme": "dark",
+    "editor.fontFamily": "FiraCode Nerd Font",
+    "editor.distractionFreeMode": false,
+    "editor.honorCamelHumps": true,
+    "fus.sendAllowed": false
+}
